@@ -1,0 +1,32 @@
+body {
+    background-color: #fbf4ea;
+    background-image: url("../../img/back-body_top.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    background-position: left right;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+body>img{
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    background-color: #fff;
+    padding: 0 5%;
+    max-width: 1450px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 60px;
+}

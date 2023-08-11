@@ -1,0 +1,118 @@
+.contact{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-item{
+    width: calc(50% - 15px);
+    border: 1px solid #e2e2e2;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info{
+    padding-left: 25px;
+}
+
+.contact-info p{
+    font-size: 13px;
+    color: #aaa;
+}
+
+.contact-info h3{
+    font-size: 12px;
+    font-family: "Mazzard bold";
+    margin: 10px 0 15px 0;
+}
+
+.contact-phone-link, .contact-email-link{
+    display: block;
+}
+
+.contact-phone-link{
+    font-size: 30px;
+    color: #bac34e;
+    margin-bottom: 15px;
+}
+
+.contact-email-link{
+    font-size: 14px;
+    color: #0a472e;
+}
+
+.contact-info span{
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.contact-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #e2e2e2;
+    width: 33%;
+    height: 90%;
+}
+
+.contact-search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #e2e2e2;
+    border-radius: 30px;
+    
+    height: 38px;
+    width: 95%;
+}
+
+.contact-search button{
+    border: none;
+    background-color: transparent;
+    width: 38px;
+    height: 38px;
+    padding: 0;
+}
+
+.contact-search button i{
+    font-size: 12px;
+    color: #000;
+}
+
+.contact-search input{
+    border: none;
+    outline: none;
+    width: 90%;
+    opacity: .5;
+    padding-left: 15px;
+}
+
+.contact-search button:hover i{
+    color: #bac34e;
+}
+
+@media(max-width:800px){
+    .contact{
+        flex-wrap: wrap;
+    }
+    .contact-item{
+        width: 100%;
+        margin-bottom: 15px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .contact-image{
+        border: none;
+    }
+    .contact-info{
+        padding: 0;
+        padding-top: 10px;
+    }
+    .contact-search{
+        margin: 0 5px;
+    }
+}

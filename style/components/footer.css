@@ -1,0 +1,99 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+}
+
+.footer_item{
+    width: calc(20% - 30px);
+}
+
+.footer_item:first-child{
+    width: calc(25% - 30px);
+}
+
+.footer_item a{
+    display: block;
+}
+
+.footer_item h2{
+    font-size: 12px;
+    font-family: "Mazzard bold";
+    letter-spacing: 2.4px;
+    margin-bottom: 30px;
+}
+
+.footer_item h3{
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.footer_item p{
+    color: #aaa;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.footer_item span{
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.footer_item a{
+    color: #555;
+    font-family: "Mazzard light";
+    margin-bottom: 15px;
+    font-size: 14px;
+    transition: .4s;
+}
+
+.footer_item a:hover{
+    color: #bac34e;
+}
+
+.footer_item img{
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 226px;
+}
+
+.footer-dop{
+    padding: 40px 0;
+    border-top: 1px solid #e2e2e2;
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+}
+
+.footer-dop p span{
+    color: #bac34e;
+}
+
+@media(max-width:1036px){
+    .footer{
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+    .footer_item, .footer_item:first-child{
+        width: calc(36.64% - 30px);
+    }
+    .footer_item:nth-child(4), .footer_item:nth-child(5){
+        margin-top: 30px;
+    }
+}
+
+@media(max-width:770px){
+    .footer_item, .footer_item:first-child{
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .footer{
+        align-items: center;
+        padding-top: 12px;
+    }
+    .footer-dop{
+        font-size: 13px;
+    }
+}

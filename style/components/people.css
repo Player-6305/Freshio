@@ -1,0 +1,80 @@
+.people{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.people_2{
+    align-items: center;
+}
+
+.people-image, .people-text{
+    width: calc(50% - 30px);
+}
+
+.people-image img{
+    width: 100%;
+}
+
+.people-text{
+    padding: 0 5%;
+}
+
+.people-text h2{
+    font-size: 30px;
+    color: #0a472e;
+    line-height: 35px;
+    margin-bottom: 20px;
+
+}
+
+.people-text p{
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 1rem;
+    line-height: 1.25em;
+}
+
+.people-text h6{
+    font-size: 14px;
+    color: #aaa;
+}
+
+.people-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.quotes{
+    padding: 0 10%;
+}
+
+@media(max-width:1400px){
+    .people-text, .people-image, .people-info{
+        width: 50%;
+    }
+    .people-text{
+        padding-right: 0;
+    }
+}
+
+@media(max-width:930px){
+    .people{
+        flex-wrap: wrap;
+    }
+    .people_2{
+        flex-wrap: wrap-reverse;
+    }
+    .people-text, .people-image, .people-info{
+        padding: 0;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .people-text h2{
+        font-size: 27px;
+        line-height: 32px;
+    }
+    .quotes{
+        padding-right: 0;
+    }
+}
